@@ -1,0 +1,15 @@
+<h2>Developers Profile</h2>
+<input type="text" class="filter" [(ngModel)]="filterSkill" placeholder="Search By Skill" />
+<div *ngIf="(developers|skillFilter:filterSkill).length>0;else noMatch">
+    <p>No developers</p>
+</div>
+<div class="dev-card" *ngFor="let dev of developers|skillFilter:filterSkill" [appSeniorHighlight]="dev.experience">
+    <h3>{{dev.name}}</h3>
+    <p><strong>Experience:</strong>{{dev.experience}} years</p>
+    <p><strong>Skills:</strong>{{dev.skills.join(',')}}</p>
+    <p *ngIf="dev.location"><strong>Location:</strong>{{dev.location}}</p>
+    <button (click)="deleteDev(dev.id)">🗑 Delete</button>
+</div>
+<ng-template #noMatch>
+    <p class="nodata">No skills match your search</p>
+</ng-template>

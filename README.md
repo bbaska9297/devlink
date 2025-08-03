@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## 📁 Topics Covered
+
+1. ✅ Routing with feature modules, wildcard routes, and lazy loading
+2. ✅ Component communication and architecture
+3. ✅ Reactive Forms + FormArray
+4. ✅ RxJS with `BehaviorSubject`
+5. ✅ Angular Services and DI
+6. ✅ Custom Pipes & Directives
+7. ✅ CRUD operations using Local Storage
+8. ✅ SCSS-based styling and layout
+9. ✅ Module-based project structure

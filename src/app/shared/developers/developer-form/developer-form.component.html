@@ -1,0 +1,28 @@
+<h2>Add Developer</h2>
+<form [formGroup]="devForm" (ngSubmit)="submit()">
+    <div>
+        <label>Name</label>
+        <input formControlName="name" />
+        <div *ngIf="devForm.get('name')?.invalid && devForm.get('name')?.touched">
+            Name is required and should be at least 2 characters
+        </div>
+    </div>
+    <div formArrayName="skills">
+        <label>Skills</label>
+        <div *ngFor="let skill of skills.controls;let i=index">
+            <input [formControlName]="i" />
+            <button type="button" class="remove" (click)="removeSkill(i)" *ngIf="skills.length>1">Remove</button>
+        </div>
+        <button type="button" class="add-skill" (click)="addSkill()">+ Add Skill</button>
+
+    </div>
+    <div>
+        <label>Experience (years)</label>
+        <input type="number" formControlName="experience" />
+    </div>
+    <div>
+        <label>Location</label>
+        <input formControlName="location" />
+    </div>
+    <button type="submit" [disabled]="devForm.invalid">Add Developer</button>
+</form>
