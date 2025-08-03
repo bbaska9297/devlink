@@ -1,39 +1,25 @@
-# Devlink
+# DevLink 🧑‍💻
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
+A developer profile manager built in **Angular 14**. Demonstrates modular Angular architecture, RxJS state management, and clean UI.  
+Great for showcasing frontend skills in interviews.
 
-## Development server
+## 🚀 Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- ✅ Lazy-loaded `DevelopersModule`
+- ✅ Reactive Forms with `FormArray` for skills
+- ✅ RxJS `BehaviorSubject` for state
+- ✅ LocalStorage CRUD operations
+- ✅ Custom Pipe: Skill-based filtering
+- ✅ Custom Directive: Highlights senior devs
+- ✅ SCSS Styling
+- ✅ Wildcard routing fallback
 
-## Code scaffolding
+## 🔧 Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular CLI v14.2.13
+- TypeScript + RxJS
+- SCSS
+- HTML
+- LocalStorage
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-## 📁 Topics Covered
-
-1. ✅ Routing with feature modules, wildcard routes, and lazy loading
-2. ✅ Component communication and architecture
-3. ✅ Reactive Forms + FormArray
-4. ✅ RxJS with `BehaviorSubject`
-5. ✅ Angular Services and DI
-6. ✅ Custom Pipes & Directives
-7. ✅ CRUD operations using Local Storage
-8. ✅ SCSS-based styling and layout
-9. ✅ Module-based project structure
+## 📁 Project Structure
